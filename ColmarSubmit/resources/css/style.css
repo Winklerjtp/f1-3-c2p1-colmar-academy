@@ -1,0 +1,733 @@
+/* Fonts */
+/* latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Montserrat Light'), local('Montserrat-Light'), url(https://fonts.gstatic.com/s/montserrat/v10/IVeH6A3MiFyaSEiudUMXE8u2Q0OS-KeTAWjgkS85mDg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+/* latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Montserrat Regular'), local('Montserrat-Regular'), url(https://fonts.gstatic.com/s/montserrat/v10/zhcz-_WihjSQC0oHJ9TCYPk_vArhqVIZ0nv9q090hN8.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+/* latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Montserrat SemiBold'), local('Montserrat-SemiBold'), url(https://fonts.gstatic.com/s/montserrat/v10/q2OIMsAtXEkOulLQVdSl06VlZKEoJGujTpfWnQT9bUY.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+/* latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Montserrat Bold'), local('Montserrat-Bold'), url(https://fonts.gstatic.com/s/montserrat/v10/IQHow_FEYlDC4Gzy_m8fcoWiMMZ7xLd792ULpGE4W_Y.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+/* General styling rules */
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  background-color: white;
+  color: #002233;
+}
+
+body {
+  line-height: 1.4rem;
+}
+
+div {
+  display: block;
+/*  border: 1px solid black;*/
+}
+
+/* Header content styling */
+header {
+  height: 4rem;
+  width: 100%;
+  background-color: #00334d;
+  z-index: 1;
+  margin-top: 0;
+}
+
+.nav_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+nav {
+  margin-left: 1.5rem;
+}
+
+nav div {
+  display: flex;
+  align-items: center;
+}
+
+header img {
+  height: 3rem;
+}
+
+header span {
+  text-align:center;
+  font-size: 2rem;
+  color: white;
+  font-weight: 300;
+}
+
+header #desktop_menu ul li a {
+  color: white;
+}
+
+#desktop_menu {
+  margin-right: 1.5rem;
+}
+
+#mobile_menu {
+  display: none;
+}
+
+ul li {
+  display: inline;
+  padding: 0 8px;
+  font-size: 1.75rem;
+  color: white;
+}
+
+header .nav_container #desktop_menu .log-btn {
+  background-color: #ffcc00;
+  border-radius: 2px;
+  color: #00334d;
+  padding: 2px 4px;
+}
+
+strong {
+  color: #ffcc00;
+  font-weight: 600;
+}
+/* Mission statement banner styling */
+#mission_container {
+  display: flex;
+}
+
+.media {
+  margin: 2rem 1.5rem;
+  width: 70%;
+  height: auto;
+}
+
+#banner_img {
+  width: 100%;
+  height: auto;
+}
+
+#mission {
+  display: flex;
+  flex-flow: wrap column;
+  justify-content: center;
+  margin-left: 4rem;
+}
+
+#mission_container h1 {
+  font-size: 4rem;
+  line-height: 4rem;
+  width: auto;
+  font-weight: 600;
+  margin: 0 0 0 0;
+}
+
+#mission_container h3 {
+  font-size: 2.5rem;
+  line-height: 3rem;
+  width: auto;
+  margin: 2rem 2rem 2rem 0;
+}
+
+button {
+  background-color: #00334d;
+  color: white;
+  border: none;
+  font-size: 1.5rem;
+  padding: 1rem 0;
+  width: 60%;
+
+}
+
+button:hover {
+  color: #ffcc00;
+}
+/* Campus information styling */
+#campus {
+  display: flex;
+  background-color: #00334d;
+  color: white;
+}
+
+.campus_left {
+  padding-left: 1.5rem;
+  width: 70%;
+}
+
+.media_info {
+  width: 100%;
+  margin: 2rem 1.5rem 2rem 0;
+}
+
+#info_img {
+  width: 100%;
+}
+
+.campus_left h1 {
+  font-size: 4rem;
+  line-height: 4rem;
+  margin: 1rem 0 1rem 0;
+  font-weight: 400;
+}
+
+.campus_left p {
+  font-size: 1.2rem;
+  width: 60%;
+  margin: 0 0 1.5rem 0;
+  font-weight: 300;
+}
+
+.campus_left span {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+#campus_info {
+  min-width: 423px;
+  margin: 1rem 0 1rem 1.5rem;
+  border-left: 1px solid #ffcc00;
+}
+
+.campus_item {
+  display: flex;
+  border-bottom: 1px solid #ffcc00;
+}
+
+#highlight {
+  border: none;
+}
+
+.campus_media {
+  max-width: 35%;
+  height: auto;
+  margin: 1rem;
+}
+
+.campus_info_img {
+  width: 100%;
+  height: auto;
+}
+
+.campus_info_descrip {
+  display: flex;
+  flex-flow: wrap column;
+  justify-content: center;
+  margin-right: 1rem;
+  width: 50%;
+}
+
+#campus h3 {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 600;
+}
+
+#campus h4 {
+  font-size: 1.5rem;
+  padding: 1rem 0;
+  font-weight: 300;
+  line-height: 1.75rem;
+}
+
+#campus span {
+  font-size: 1.75rem;
+  color: #ffcc00;
+}
+
+#campus a {
+  color: #ffcc00;
+  font-weight: 400;
+}
+
+.campus_info_img_mobile {
+  display: none;
+}
+
+.highlight {
+  background-color: #ffcc00;
+  color: #002233
+}
+
+#campus .highlight a {
+  color: white;
+}
+
+/* Learning content styling */
+#learn {
+  padding: 0 0 1rem 0;
+  background-color: white;
+}
+
+#learn h1 {
+  font-size: 4rem;
+  line-height: 4.25rem;
+  font-weight: 600;
+  padding: 3rem 0 2rem 0;
+  text-align: center;
+}
+
+#course_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: auto;
+}
+
+.course_item {
+  width: 30%;
+  margin: 1rem;
+  background-color: #00334d;
+  color: white;
+}
+
+.course_img {
+  width: 100%;
+  height: auto;
+}
+
+#learn img {
+  width: 100%;
+  height: auto;
+}
+
+.course_item h3 {
+  padding: 1rem 0 0 1rem;
+  font-size: 2rem;
+  line-height: 2.25rem;
+  font-weight: 600;
+  color: #ffcc00;
+}
+
+.course_item h4 {
+  padding: 1.5rem 0 1.5rem 1rem;
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+}
+
+.course_item p {
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  padding: 0 0 1rem 1rem;
+  font-weight: 300;
+}
+
+/* Thesis content styling */
+#thesis {
+  background-color: #00334d;
+  color: white;
+}
+
+#thesis_container {
+  display: flex;
+  width: 100%;
+}
+#thesis h1 {
+  font-size: 4rem;
+  font-weight: 600;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.thesis_media_container {
+  width: 70%;
+}
+
+#thesis_video {
+  height: auto;
+  width: 95%;
+  padding: 0 0 1.5rem 1.5rem;
+}
+
+video {
+  width: 100%;
+  object-fit: contain;
+}
+
+.thesis_media_container h3 {
+  margin-left: 1.5rem;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 600;
+  padding-bottom: 1.5rem;
+}
+
+.thesis_media_container p {
+  margin: 0 0 2rem 1.5rem;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  font-weight: 300;
+}
+
+#product_research {
+  min-width: 423px;
+  margin-left: 1rem;
+}
+
+.pr_item {
+  min-height: 168px;
+  display: flex;
+  align-items: center;
+}
+
+.pr_media {
+  width:40%;
+  margin: 1rem;
+  height: auto;
+}
+
+.pr_media img {
+  width: 100%;
+  height: auto;
+}
+
+.pr_info {
+  display: flex;
+  flex-flow: wrap column;
+  justify-content: center;
+  margin-right: 1rem;
+  width: 55%;
+}
+
+#thesis h3 {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 600;
+}
+
+#thesis h4 {
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+  padding: 1rem 0;
+  font-weight: 300;
+}
+
+/* footer content styling */
+footer {
+  background-color: #ffcc00;
+  padding: 0 2rem;
+  border-top: 2px groove white;
+  display: flex;
+  justify-content: space-between;
+  height: 6rem;
+}
+
+footer span {
+  display: block;
+  padding-top: 2rem;
+  font-size: 1.25rem;
+}
+
+footer a {
+  display: inline-flex;
+  padding-top: 2rem;
+}
+
+/* media queries */
+@media only screen and (max-width: 1101px)
+{
+  .logo {
+    display: none;
+  }
+
+  #desktop_menu {
+    display: none;
+  }
+
+  #mobile_menu {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: .5rem;
+  }
+
+  #mission_container {
+    flex-wrap: wrap;
+    width: 100%;
+
+  }
+
+  .media {
+    height: 360px;
+    overflow: hidden;
+  }
+
+  #mission {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+
+  #campus h1 {
+    font-size: 3rem;
+    margin: .5rem 0;
+  }
+
+  #campus p {
+    font-size: 1rem;
+    width: 100%;
+  }
+
+  #campus span {
+    font-size: 1.5rem;
+  }
+
+  #campus_info {
+    width: 70%;
+  }
+
+  #campus h3 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    padding-top: 1rem;
+  }
+
+  #campus h4 {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    padding: .5rem 0;
+  }
+
+  #campus a {
+    font-size: 1.5rem;
+  }
+
+  #campus .highlight a {
+    color: #002233;
+  }
+
+  #product_research {
+    width: 60%;
+  }
+
+  .pr_info h3 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    padding-top: 1rem;
+  }
+
+  .pr_info h4 {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    padding: .5rem 0;
+  }
+
+  footer {
+    height: 4rem;
+    align-items: center;
+    padding: 0 1rem 1rem 1rem;
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  .logo {
+    display: none;
+  }
+
+  #desktop_menu {
+    display: none;
+  }
+
+  #mobile_menu {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: .5rem;
+  }
+
+  #mission_container {
+    flex-wrap: wrap;
+    padding: 0;
+
+  }
+
+  .media {
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+    margin: 0;
+  }
+
+  #mission {
+    display: flex;
+    flex-flow: wrap column;
+    justify-content: center;
+    width: 100%;
+    margin: 2rem 1rem;
+  }
+
+  #mission_container h1 {
+    font-size: 2rem;
+    line-height: 2.25rem;
+  }
+
+  #mission_container h3 {
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+    font-weight: 300
+  }
+
+  #mission_container button {
+    width: 100%;
+  }
+
+  #campus {
+    padding-bottom: 1rem;
+  }
+
+  .campus_left {
+    display: none;
+  }
+
+  #campus_info {
+    width: 100%;
+    border: none;
+    margin: 1rem;
+  }
+
+  .campus_item {
+    flex-flow: wrap column;
+    border: none;
+    height: auto;
+    width: 100%;
+  }
+
+  .campus_media {
+    min-width: 100%;
+    margin: 0;
+    padding:
+  }
+
+  .campus_info_img {
+    display: none;
+  }
+
+  .campus_info_img_mobile {
+    display: inline-flex;
+    width: 100%;
+    height: auto;
+  }
+
+  .campus_info_descrip {
+    margin: 0 0 1rem 2rem;
+  }
+
+  .highlight {
+    background-color: #00334d;
+    color: white;
+  }
+
+  #campus .highlight a {
+    color: #ffcc00;
+  }
+
+  #learn {
+    margin-bottom: 1.5rem;
+  }
+
+  #learn h1 {
+    font-size: 2rem;
+  }
+
+  #course_container {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .course_item {
+    width: 100%;
+    margin: 0.5rem 1rem;
+    padding: 1rem;
+  }
+
+  .course_img {
+    display: none;
+  }
+
+  .course_item h3 {
+    font-size: 1.5rem;
+  }
+
+  .course_item h4 {
+    font-size: 1rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+  }
+
+  .course_item p {
+    font-size: 1rem;
+  }
+
+  #thesis {
+    padding: 1.5rem 0;
+  }
+
+  #thesis h1 {
+    font-size: 2rem;
+  }
+
+  .thesis_media_container {
+    width: 100%;
+  }
+
+  #thesis_video {
+    height: auto;
+    width: 100%;
+    padding: 0;
+  }
+
+  .thesis_media_container h3, .thesis_media_container p {
+    display: none;
+  }
+
+  #product_research {
+    display: none;
+  }
+
+  footer {
+    justify-content: flex-start;
+  }
+
+  footer span {
+    font-size: 1rem;
+  }
+
+  #legal {
+    display: none;
+  }
+}
